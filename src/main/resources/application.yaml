@@ -1,0 +1,22 @@
+spring:
+  warehouse-db:
+    driver-class-name: org.postgresql.Driver
+    jdbcUrl: jdbc:postgresql://localhost:5432/warehouse
+    username: multi_source_test
+    password: 1111
+  statistic-db:
+    driver-class-name: org.postgresql.Driver
+    jdbcUrl: jdbc:postgresql://localhost:5432/statistic
+    username: multi_source_test
+    password: 1111
+  test-db:
+    driver-class-name: org.postgresql.Driver
+    jdbcUrl: jdbc:postgresql://localhost:5432/test
+    username: multi_source_test
+    password: 1111
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
